@@ -1,0 +1,26 @@
+[
+{
+  "directory": "D:/order_book/build",
+  "command": "D:\\mingw\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\OrderBook.dir\\main.cpp.obj -c D:\\order_book\\main.cpp",
+  "file": "D:/order_book/main.cpp",
+  "output": "CMakeFiles/OrderBook.dir/main.cpp.obj"
+},
+{
+  "directory": "D:/order_book/build",
+  "command": "D:\\mingw\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\OrderBook.dir\\order.cpp.obj -c D:\\order_book\\order.cpp",
+  "file": "D:/order_book/order.cpp",
+  "output": "CMakeFiles/OrderBook.dir/order.cpp.obj"
+},
+{
+  "directory": "D:/order_book/build",
+  "command": "D:\\mingw\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\OrderBook.dir\\order_book.cpp.obj -c D:\\order_book\\order_book.cpp",
+  "file": "D:/order_book/order_book.cpp",
+  "output": "CMakeFiles/OrderBook.dir/order_book.cpp.obj"
+},
+{
+  "directory": "D:/order_book/build",
+  "command": "D:\\mingw\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\OrderBook.dir\\trade.cpp.obj -c D:\\order_book\\trade.cpp",
+  "file": "D:/order_book/trade.cpp",
+  "output": "CMakeFiles/OrderBook.dir/trade.cpp.obj"
+}
+]
