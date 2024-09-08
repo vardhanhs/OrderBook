@@ -32,5 +32,5 @@ This project implements a basic order book for managing limit orders in a financ
 - Compile the project Run command ("cmake --build .") in the root folder(Order_book).
 - Run the exe file generated in the exe folder.
 - To run tests run the exe file generated in build/tests directory.
-- **NOTE** Google test library is included in this repo, need not to be installed seperately.
+- **NOTE**: Google test library is included in this repo, need not to be installed seperately.
 
