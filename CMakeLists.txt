@@ -6,6 +6,7 @@ add_executable(OrderBook
     order.cpp
     order_book.cpp
     trade.cpp
+    thread_pool.cpp
 )
 
 include(CTest)

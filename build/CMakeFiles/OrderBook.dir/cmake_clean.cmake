@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/OrderBook.dir/order.cpp.obj.d"
   "CMakeFiles/OrderBook.dir/order_book.cpp.obj"
   "CMakeFiles/OrderBook.dir/order_book.cpp.obj.d"
+  "CMakeFiles/OrderBook.dir/thread_pool.cpp.obj"
+  "CMakeFiles/OrderBook.dir/thread_pool.cpp.obj.d"
   "CMakeFiles/OrderBook.dir/trade.cpp.obj"
   "CMakeFiles/OrderBook.dir/trade.cpp.obj.d"
   "OrderBook.exe"

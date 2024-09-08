@@ -594,6 +594,30 @@ order_book.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OrderBook.dir\build.make CMakeFiles/OrderBook.dir/order_book.cpp.s
 .PHONY : order_book.cpp.s
 
+thread_pool.obj: thread_pool.cpp.obj
+.PHONY : thread_pool.obj
+
+# target to build an object file
+thread_pool.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OrderBook.dir\build.make CMakeFiles/OrderBook.dir/thread_pool.cpp.obj
+.PHONY : thread_pool.cpp.obj
+
+thread_pool.i: thread_pool.cpp.i
+.PHONY : thread_pool.i
+
+# target to preprocess a source file
+thread_pool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OrderBook.dir\build.make CMakeFiles/OrderBook.dir/thread_pool.cpp.i
+.PHONY : thread_pool.cpp.i
+
+thread_pool.s: thread_pool.cpp.s
+.PHONY : thread_pool.s
+
+# target to generate assembly for a file
+thread_pool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OrderBook.dir\build.make CMakeFiles/OrderBook.dir/thread_pool.cpp.s
+.PHONY : thread_pool.cpp.s
+
 trade.obj: trade.cpp.obj
 .PHONY : trade.obj
 
@@ -667,6 +691,9 @@ help:
 	@echo ... order_book.obj
 	@echo ... order_book.i
 	@echo ... order_book.s
+	@echo ... thread_pool.obj
+	@echo ... thread_pool.i
+	@echo ... thread_pool.s
 	@echo ... trade.obj
 	@echo ... trade.i
 	@echo ... trade.s

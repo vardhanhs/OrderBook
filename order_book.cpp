@@ -1,26 +1,47 @@
 #include "order_book.h"
 
-void OrderBook::addOrder(const Order& order) {
+OrderBook::OrderBook(size_t numThreads) : pool(numThreads) {}
+
+void OrderBook::addOrder(Order&& order) {
     const std::string& asset = order.getAsset();
 
-    if (assetBooks.find(asset) == assetBooks.end()) {
-        assetBooks[asset] = { BuyOrderQueue(), SellOrderQueue() };
+    {   
+        std::lock_guard<std::mutex> lock(assetQueueLocks[asset]);
+        assetOrderQueue[asset].push(order);
     }
 
-    auto& buyOrders = assetBooks[asset].first;
-    auto& sellOrders = assetBooks[asset].second;
+    // enque task
+    pool.enqueueTask([this, asset]() {
+        processOrderQueue(asset);
+    });
+    // std::cout<<"Order added"<<std::endl;
+}
 
-    // Make a mutable copy of the order
-    Order mutableOrder = order; // why making mutable copy ?
+void OrderBook::processOrderQueue(const std::string& asset) {
+    while (true) {
 
-    if (order.getType() == Order::BUY) {
-        processBuyOrder(mutableOrder, sellOrders);
-    } else {
-        processSellOrder(mutableOrder, buyOrders);
+        if (assetOrderQueue[asset].empty()) {
+                return;
+        }
+
+        std::lock_guard<std::mutex> lock(assetQueueLocks[asset]);
+
+        Order order = assetOrderQueue[asset].front();
+        assetOrderQueue[asset].pop();        
+
+        if (order.getType() == Order::BUY) {
+            processBuyOrder(order, asset);
+        } else {
+            processSellOrder(order, asset);
+        }
     }
 }
 
-void OrderBook::processBuyOrder(Order& incomingOrder, SellOrderQueue& sellOrders) {
+void OrderBook::processBuyOrder(Order& incomingOrder, const std::string& asset) {
+    
+    auto& buyOrders = assetBooks[asset].first;
+    auto& sellOrders = assetBooks[asset].second;
+    
     while (!sellOrders.empty()) {
 
         // Create a mutable copy of the top element
@@ -31,8 +52,12 @@ void OrderBook::processBuyOrder(Order& incomingOrder, SellOrderQueue& sellOrders
 
         // Process trade
         int matchQty = std::min(incomingOrder.getQuantity(), matchingOrder.getQuantity());
-        // (TODO) add order id of trades
-        trades.emplace_back(incomingOrder.getAsset(), matchingOrder.getPrice(), matchQty, std::time(nullptr));
+
+        {
+            std::lock_guard<std::mutex> lock(saveTrade);
+            // (TODO) add order id of trades
+            trades.emplace_back(incomingOrder.getAsset(), matchingOrder.getPrice(), matchQty, std::time(nullptr));
+        }
         // Update quantities
         incomingOrder.reduceQuantity(matchQty);
         matchingOrder.reduceQuantity(matchQty);
@@ -57,12 +82,15 @@ void OrderBook::processBuyOrder(Order& incomingOrder, SellOrderQueue& sellOrders
 
     // Adding to buy order queue
     if (incomingOrder.getQuantity() > 0) {
-        auto& buyOrders = assetBooks[incomingOrder.getAsset()].first;
         buyOrders.push(incomingOrder);
     }
 }
 
-void OrderBook::processSellOrder(Order& incomingOrder, BuyOrderQueue& buyOrders) {
+void OrderBook::processSellOrder(Order& incomingOrder, const std::string& asset) {
+    
+    auto& buyOrders = assetBooks[asset].first;
+    auto& sellOrders = assetBooks[asset].second;
+
     while (!buyOrders.empty()) {
         
         // Create a mutable copy of the top element
@@ -73,8 +101,11 @@ void OrderBook::processSellOrder(Order& incomingOrder, BuyOrderQueue& buyOrders)
 
         // Process trade
         int matchQty = std::min(incomingOrder.getQuantity(), matchingOrder.getQuantity());
-        // (TODO) add order id of trades
-        trades.emplace_back(incomingOrder.getAsset(), matchingOrder.getPrice(), matchQty, std::time(nullptr));
+        {
+            std::lock_guard<std::mutex> lock(saveTrade);
+            // (TODO) add order id of trades
+            trades.emplace_back(incomingOrder.getAsset(), matchingOrder.getPrice(), matchQty, std::time(nullptr));
+        }
 
         // Update quantities
         incomingOrder.reduceQuantity(matchQty);
@@ -97,12 +128,11 @@ void OrderBook::processSellOrder(Order& incomingOrder, BuyOrderQueue& buyOrders)
     }
 
     if (incomingOrder.getQuantity() > 0) {
-        auto& sellOrders = assetBooks[incomingOrder.getAsset()].second;
         sellOrders.push(incomingOrder);
     }
 }
 
-void OrderBook::printTrades() const {
+void OrderBook::getExecutedTrades() const {
     for (const auto& trade : trades) {
         trade.printTrade();
     }

@@ -22,5 +22,11 @@
   "command": "D:\\mingw\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\OrderBook.dir\\trade.cpp.obj -c D:\\order_book\\trade.cpp",
   "file": "D:/order_book/trade.cpp",
   "output": "CMakeFiles/OrderBook.dir/trade.cpp.obj"
+},
+{
+  "directory": "D:/order_book/build",
+  "command": "D:\\mingw\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\OrderBook.dir\\thread_pool.cpp.obj -c D:\\order_book\\thread_pool.cpp",
+  "file": "D:/order_book/thread_pool.cpp",
+  "output": "CMakeFiles/OrderBook.dir/thread_pool.cpp.obj"
 }
 ]
