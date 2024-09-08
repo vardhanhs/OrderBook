@@ -68,97 +68,34 @@ include CMakeFiles/OrderBook.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/OrderBook.dir/flags.make
 
-CMakeFiles/OrderBook.dir/main.cpp.obj: CMakeFiles/OrderBook.dir/flags.make
-CMakeFiles/OrderBook.dir/main.cpp.obj: D:/order_book/main.cpp
-CMakeFiles/OrderBook.dir/main.cpp.obj: CMakeFiles/OrderBook.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\order_book\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OrderBook.dir/main.cpp.obj"
-	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OrderBook.dir/main.cpp.obj -MF CMakeFiles\OrderBook.dir\main.cpp.obj.d -o CMakeFiles\OrderBook.dir\main.cpp.obj -c D:\order_book\main.cpp
+CMakeFiles/OrderBook.dir/src/main.cpp.obj: CMakeFiles/OrderBook.dir/flags.make
+CMakeFiles/OrderBook.dir/src/main.cpp.obj: D:/order_book/src/main.cpp
+CMakeFiles/OrderBook.dir/src/main.cpp.obj: CMakeFiles/OrderBook.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\order_book\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OrderBook.dir/src/main.cpp.obj"
+	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OrderBook.dir/src/main.cpp.obj -MF CMakeFiles\OrderBook.dir\src\main.cpp.obj.d -o CMakeFiles\OrderBook.dir\src\main.cpp.obj -c D:\order_book\src\main.cpp
 
-CMakeFiles/OrderBook.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OrderBook.dir/main.cpp.i"
-	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\order_book\main.cpp > CMakeFiles\OrderBook.dir\main.cpp.i
+CMakeFiles/OrderBook.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OrderBook.dir/src/main.cpp.i"
+	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\order_book\src\main.cpp > CMakeFiles\OrderBook.dir\src\main.cpp.i
 
-CMakeFiles/OrderBook.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OrderBook.dir/main.cpp.s"
-	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\order_book\main.cpp -o CMakeFiles\OrderBook.dir\main.cpp.s
-
-CMakeFiles/OrderBook.dir/order.cpp.obj: CMakeFiles/OrderBook.dir/flags.make
-CMakeFiles/OrderBook.dir/order.cpp.obj: D:/order_book/order.cpp
-CMakeFiles/OrderBook.dir/order.cpp.obj: CMakeFiles/OrderBook.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\order_book\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OrderBook.dir/order.cpp.obj"
-	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OrderBook.dir/order.cpp.obj -MF CMakeFiles\OrderBook.dir\order.cpp.obj.d -o CMakeFiles\OrderBook.dir\order.cpp.obj -c D:\order_book\order.cpp
-
-CMakeFiles/OrderBook.dir/order.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OrderBook.dir/order.cpp.i"
-	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\order_book\order.cpp > CMakeFiles\OrderBook.dir\order.cpp.i
-
-CMakeFiles/OrderBook.dir/order.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OrderBook.dir/order.cpp.s"
-	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\order_book\order.cpp -o CMakeFiles\OrderBook.dir\order.cpp.s
-
-CMakeFiles/OrderBook.dir/order_book.cpp.obj: CMakeFiles/OrderBook.dir/flags.make
-CMakeFiles/OrderBook.dir/order_book.cpp.obj: D:/order_book/order_book.cpp
-CMakeFiles/OrderBook.dir/order_book.cpp.obj: CMakeFiles/OrderBook.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\order_book\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OrderBook.dir/order_book.cpp.obj"
-	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OrderBook.dir/order_book.cpp.obj -MF CMakeFiles\OrderBook.dir\order_book.cpp.obj.d -o CMakeFiles\OrderBook.dir\order_book.cpp.obj -c D:\order_book\order_book.cpp
-
-CMakeFiles/OrderBook.dir/order_book.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OrderBook.dir/order_book.cpp.i"
-	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\order_book\order_book.cpp > CMakeFiles\OrderBook.dir\order_book.cpp.i
-
-CMakeFiles/OrderBook.dir/order_book.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OrderBook.dir/order_book.cpp.s"
-	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\order_book\order_book.cpp -o CMakeFiles\OrderBook.dir\order_book.cpp.s
-
-CMakeFiles/OrderBook.dir/trade.cpp.obj: CMakeFiles/OrderBook.dir/flags.make
-CMakeFiles/OrderBook.dir/trade.cpp.obj: D:/order_book/trade.cpp
-CMakeFiles/OrderBook.dir/trade.cpp.obj: CMakeFiles/OrderBook.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\order_book\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OrderBook.dir/trade.cpp.obj"
-	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OrderBook.dir/trade.cpp.obj -MF CMakeFiles\OrderBook.dir\trade.cpp.obj.d -o CMakeFiles\OrderBook.dir\trade.cpp.obj -c D:\order_book\trade.cpp
-
-CMakeFiles/OrderBook.dir/trade.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OrderBook.dir/trade.cpp.i"
-	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\order_book\trade.cpp > CMakeFiles\OrderBook.dir\trade.cpp.i
-
-CMakeFiles/OrderBook.dir/trade.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OrderBook.dir/trade.cpp.s"
-	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\order_book\trade.cpp -o CMakeFiles\OrderBook.dir\trade.cpp.s
-
-CMakeFiles/OrderBook.dir/thread_pool.cpp.obj: CMakeFiles/OrderBook.dir/flags.make
-CMakeFiles/OrderBook.dir/thread_pool.cpp.obj: D:/order_book/thread_pool.cpp
-CMakeFiles/OrderBook.dir/thread_pool.cpp.obj: CMakeFiles/OrderBook.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\order_book\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OrderBook.dir/thread_pool.cpp.obj"
-	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OrderBook.dir/thread_pool.cpp.obj -MF CMakeFiles\OrderBook.dir\thread_pool.cpp.obj.d -o CMakeFiles\OrderBook.dir\thread_pool.cpp.obj -c D:\order_book\thread_pool.cpp
-
-CMakeFiles/OrderBook.dir/thread_pool.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OrderBook.dir/thread_pool.cpp.i"
-	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\order_book\thread_pool.cpp > CMakeFiles\OrderBook.dir\thread_pool.cpp.i
-
-CMakeFiles/OrderBook.dir/thread_pool.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OrderBook.dir/thread_pool.cpp.s"
-	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\order_book\thread_pool.cpp -o CMakeFiles\OrderBook.dir\thread_pool.cpp.s
+CMakeFiles/OrderBook.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OrderBook.dir/src/main.cpp.s"
+	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\order_book\src\main.cpp -o CMakeFiles\OrderBook.dir\src\main.cpp.s
 
 # Object files for target OrderBook
 OrderBook_OBJECTS = \
-"CMakeFiles/OrderBook.dir/main.cpp.obj" \
-"CMakeFiles/OrderBook.dir/order.cpp.obj" \
-"CMakeFiles/OrderBook.dir/order_book.cpp.obj" \
-"CMakeFiles/OrderBook.dir/trade.cpp.obj" \
-"CMakeFiles/OrderBook.dir/thread_pool.cpp.obj"
+"CMakeFiles/OrderBook.dir/src/main.cpp.obj"
 
 # External object files for target OrderBook
 OrderBook_EXTERNAL_OBJECTS =
 
-OrderBook.exe: CMakeFiles/OrderBook.dir/main.cpp.obj
-OrderBook.exe: CMakeFiles/OrderBook.dir/order.cpp.obj
-OrderBook.exe: CMakeFiles/OrderBook.dir/order_book.cpp.obj
-OrderBook.exe: CMakeFiles/OrderBook.dir/trade.cpp.obj
-OrderBook.exe: CMakeFiles/OrderBook.dir/thread_pool.cpp.obj
+OrderBook.exe: CMakeFiles/OrderBook.dir/src/main.cpp.obj
 OrderBook.exe: CMakeFiles/OrderBook.dir/build.make
+OrderBook.exe: libOrderBookLib.a
 OrderBook.exe: CMakeFiles/OrderBook.dir/linkLibs.rsp
 OrderBook.exe: CMakeFiles/OrderBook.dir/objects1.rsp
 OrderBook.exe: CMakeFiles/OrderBook.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\order_book\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable OrderBook.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\order_book\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable OrderBook.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\OrderBook.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

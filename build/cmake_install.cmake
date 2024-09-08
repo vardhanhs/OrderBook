@@ -37,6 +37,13 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "D:/mingw/mingw64/bin/objdump.exe")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("D:/order_book/build/third_party/googletest/cmake_install.cmake")
+  include("D:/order_book/build/tests/cmake_install.cmake")
+
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_COMPONENT MATCHES "^[a-zA-Z0-9_.+-]+$")
     set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")

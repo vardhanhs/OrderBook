@@ -1,32 +1,74 @@
 [
 {
   "directory": "D:/order_book/build",
-  "command": "D:\\mingw\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\OrderBook.dir\\main.cpp.obj -c D:\\order_book\\main.cpp",
-  "file": "D:/order_book/main.cpp",
-  "output": "CMakeFiles/OrderBook.dir/main.cpp.obj"
+  "command": "D:\\mingw\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\OrderBookLib.dir\\src\\order.cpp.obj -c D:\\order_book\\src\\order.cpp",
+  "file": "D:/order_book/src/order.cpp",
+  "output": "CMakeFiles/OrderBookLib.dir/src/order.cpp.obj"
 },
 {
   "directory": "D:/order_book/build",
-  "command": "D:\\mingw\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\OrderBook.dir\\order.cpp.obj -c D:\\order_book\\order.cpp",
-  "file": "D:/order_book/order.cpp",
-  "output": "CMakeFiles/OrderBook.dir/order.cpp.obj"
+  "command": "D:\\mingw\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\OrderBookLib.dir\\src\\order_book.cpp.obj -c D:\\order_book\\src\\order_book.cpp",
+  "file": "D:/order_book/src/order_book.cpp",
+  "output": "CMakeFiles/OrderBookLib.dir/src/order_book.cpp.obj"
 },
 {
   "directory": "D:/order_book/build",
-  "command": "D:\\mingw\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\OrderBook.dir\\order_book.cpp.obj -c D:\\order_book\\order_book.cpp",
-  "file": "D:/order_book/order_book.cpp",
-  "output": "CMakeFiles/OrderBook.dir/order_book.cpp.obj"
+  "command": "D:\\mingw\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\OrderBookLib.dir\\src\\trade.cpp.obj -c D:\\order_book\\src\\trade.cpp",
+  "file": "D:/order_book/src/trade.cpp",
+  "output": "CMakeFiles/OrderBookLib.dir/src/trade.cpp.obj"
 },
 {
   "directory": "D:/order_book/build",
-  "command": "D:\\mingw\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\OrderBook.dir\\trade.cpp.obj -c D:\\order_book\\trade.cpp",
-  "file": "D:/order_book/trade.cpp",
-  "output": "CMakeFiles/OrderBook.dir/trade.cpp.obj"
+  "command": "D:\\mingw\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\OrderBookLib.dir\\src\\thread_pool.cpp.obj -c D:\\order_book\\src\\thread_pool.cpp",
+  "file": "D:/order_book/src/thread_pool.cpp",
+  "output": "CMakeFiles/OrderBookLib.dir/src/thread_pool.cpp.obj"
 },
 {
   "directory": "D:/order_book/build",
-  "command": "D:\\mingw\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\OrderBook.dir\\thread_pool.cpp.obj -c D:\\order_book\\thread_pool.cpp",
-  "file": "D:/order_book/thread_pool.cpp",
-  "output": "CMakeFiles/OrderBook.dir/thread_pool.cpp.obj"
+  "command": "D:\\mingw\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\OrderBook.dir\\src\\main.cpp.obj -c D:\\order_book\\src\\main.cpp",
+  "file": "D:/order_book/src/main.cpp",
+  "output": "CMakeFiles/OrderBook.dir/src/main.cpp.obj"
+},
+{
+  "directory": "D:/order_book/build/third_party/googletest/googlemock",
+  "command": "D:\\mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/gmock.dir/includes_CXX.rsp -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c D:\\order_book\\third_party\\googletest\\googlemock\\src\\gmock-all.cc",
+  "file": "D:/order_book/third_party/googletest/googlemock/src/gmock-all.cc",
+  "output": "third_party/googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj"
+},
+{
+  "directory": "D:/order_book/build/third_party/googletest/googlemock",
+  "command": "D:\\mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/gmock_main.dir/includes_CXX.rsp -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj -c D:\\order_book\\third_party\\googletest\\googlemock\\src\\gmock_main.cc",
+  "file": "D:/order_book/third_party/googletest/googlemock/src/gmock_main.cc",
+  "output": "third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj"
+},
+{
+  "directory": "D:/order_book/build/third_party/googletest/googletest",
+  "command": "D:\\mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/gtest.dir/includes_CXX.rsp -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj -c D:\\order_book\\third_party\\googletest\\googletest\\src\\gtest-all.cc",
+  "file": "D:/order_book/third_party/googletest/googletest/src/gtest-all.cc",
+  "output": "third_party/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj"
+},
+{
+  "directory": "D:/order_book/build/third_party/googletest/googletest",
+  "command": "D:\\mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/gtest_main.dir/includes_CXX.rsp -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c D:\\order_book\\third_party\\googletest\\googletest\\src\\gtest_main.cc",
+  "file": "D:/order_book/third_party/googletest/googletest/src/gtest_main.cc",
+  "output": "third_party/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
+},
+{
+  "directory": "D:/order_book/build/tests",
+  "command": "D:\\mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/OrderBookTests.dir/includes_CXX.rsp -g -o CMakeFiles\\OrderBookTests.dir\\test_order.cpp.obj -c D:\\order_book\\tests\\test_order.cpp",
+  "file": "D:/order_book/tests/test_order.cpp",
+  "output": "tests/CMakeFiles/OrderBookTests.dir/test_order.cpp.obj"
+},
+{
+  "directory": "D:/order_book/build/tests",
+  "command": "D:\\mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/OrderBookTests.dir/includes_CXX.rsp -g -o CMakeFiles\\OrderBookTests.dir\\test_order_book.cpp.obj -c D:\\order_book\\tests\\test_order_book.cpp",
+  "file": "D:/order_book/tests/test_order_book.cpp",
+  "output": "tests/CMakeFiles/OrderBookTests.dir/test_order_book.cpp.obj"
+},
+{
+  "directory": "D:/order_book/build/tests",
+  "command": "D:\\mingw\\mingw64\\bin\\g++.exe  @CMakeFiles/OrderBookTests.dir/includes_CXX.rsp -g -o CMakeFiles\\OrderBookTests.dir\\test_trade.cpp.obj -c D:\\order_book\\tests\\test_trade.cpp",
+  "file": "D:/order_book/tests/test_trade.cpp",
+  "output": "tests/CMakeFiles/OrderBookTests.dir/test_trade.cpp.obj"
 }
 ]

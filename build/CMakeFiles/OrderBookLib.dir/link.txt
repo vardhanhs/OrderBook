@@ -1,0 +1,2 @@
+D:\mingw\mingw64\bin\ar.exe qc libOrderBookLib.a CMakeFiles/OrderBookLib.dir/src/order.cpp.obj CMakeFiles/OrderBookLib.dir/src/order_book.cpp.obj CMakeFiles/OrderBookLib.dir/src/trade.cpp.obj CMakeFiles/OrderBookLib.dir/src/thread_pool.cpp.obj
+D:\mingw\mingw64\bin\ranlib.exe libOrderBookLib.a

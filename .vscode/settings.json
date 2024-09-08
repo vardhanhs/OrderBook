@@ -51,6 +51,23 @@
         "mutex": "cpp",
         "semaphore": "cpp",
         "stop_token": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "any": "cpp",
+        "charconv": "cpp",
+        "chrono": "cpp",
+        "csignal": "cpp",
+        "cstdarg": "cpp",
+        "cstring": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "set": "cpp",
+        "unordered_set": "cpp",
+        "format": "cpp",
+        "fstream": "cpp",
+        "iomanip": "cpp",
+        "span": "cpp",
+        "sstream": "cpp",
+        "cinttypes": "cpp",
+        "variant": "cpp"
     }
 }
