@@ -6,6 +6,9 @@
 #include "trade.h"
 
 int main() {
+    
+    // Include a logger to log all activities
+
     OrderBook ob(2);
 
     ob.addOrder(Order(1, "TATA", 4500.0, 2, Order::BUY));  // Buy 2 TATA at 4500

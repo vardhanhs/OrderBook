@@ -28,9 +28,13 @@ This project implements a basic order book for managing limit orders in a financ
 
 ### How to Build
 - Clone the repository
-- Configure with Cmake (If using VS Code, run the "Cmake: Configure" command from Command Palette.
+- Configure with Cmake (If using VS Code, run the "Cmake: Configure" command from Command Palette).
 - Compile the project Run command ("cmake --build .") in the root folder(Order_book).
 - Run the exe file generated in the exe folder.
 - To run tests run the exe file generated in build/tests directory.
 - **NOTE**: Google test library is included in this repo, need not to be installed seperately.
 
+### Pending Tasks (TODO)
+- **Better Memory management** Order objects are repeatedly copy constructed in a couple of places slowing down our orderbook.
+- **Logging** Implement logging to help debugging or storing data in file of the processed and in-process orders.
+- **FlakyTests** Sometimes (10%), unit tests fails giving std::alloc error, RCA the issue. (Maybe specific to my laptop). 
