@@ -7,6 +7,7 @@ void OrderBook::addOrder(Order &&order)
     const std::string &asset = order.getAsset();
 
     {
+        //(TODO) Test improve in efficieny if shared lock is used here
         std::lock_guard<std::mutex> lock(assetQueueLocks[asset]);
         assetOrderQueue[asset].push(order);
     }
@@ -64,7 +65,6 @@ void OrderBook::processBuyOrder(Order &incomingOrder, const std::string &asset)
 
         {
             std::lock_guard<std::mutex> lock(saveTrade);
-            // (TODO) add order id of trades
             // (Assumption#1) If buy order is for 130 and matching sell order is 90, then
             // trade will occur at lowest offered price at the moment.
             trades.emplace_back(incomingOrder.getAsset(), matchingOrder.getPrice(), matchQty, std::time(nullptr),
@@ -124,7 +124,6 @@ void OrderBook::processSellOrder(Order &incomingOrder, const std::string &asset)
         int matchQty = std::min(incomingOrder.getQuantity(), matchingOrder.getQuantity());
         {
             std::lock_guard<std::mutex> lock(saveTrade);
-            // (TODO) add order id of trades
             // (Assumption#2 ) If sell order is for 90 price and max offered buy pric is 130, then
             // execution will take place at 130 (Highest offered price at that time).
             trades.emplace_back(incomingOrder.getAsset(), matchingOrder.getPrice(), matchQty, std::time(nullptr),

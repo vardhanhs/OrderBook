@@ -13,7 +13,8 @@ void Trade::printTrade() const
               << ", Quantity: " << quantity << ", Timestamp: "
               << std::ctime(&timestamp)
               << ", Buy Order Id: "<<buyOrderId
-              <<", Sell Order Id: "<<sellOrderId;
+              <<", Sell Order Id: "<<sellOrderId
+              << std::endl;
 }
 
 // Getters

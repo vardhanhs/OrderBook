@@ -32,7 +32,7 @@ TEST(TradeTest, PrintTrade) {
     std::ostringstream expectedOutput;
     expectedOutput << "Trade - Asset: BTC, Price: 50000, Quantity: 5, Timestamp: "
                    << expectedTimestamp
-                   << ", Buy Order Id: 101, Sell Order Id: 202";
+                   << ", Buy Order Id: 101, Sell Order Id: 202"<<std::endl;
 
     ASSERT_EQ(output.str(), expectedOutput.str());
 }
